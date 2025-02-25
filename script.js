@@ -22,6 +22,10 @@ function clicarEVerificar() {
                     if (!isNaN(valor) && valor >= 1000 && valor <= 1500) { 
                         console.log(`Número encontrado: ${valor}`); 
                         numerosEncontrados.push(valor); 
+
+                        radio.style.border = '3px solid red'; 
+                        radio.style.backgroundColor = 'rgba(255, 255, 0, 0.2)'; 
+                        radio.style.boxShadow = '0 0 10px rgba(255, 0, 0, 0.6)';
                     } 
                 });
 
